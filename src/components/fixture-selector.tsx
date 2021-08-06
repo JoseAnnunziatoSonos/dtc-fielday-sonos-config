@@ -16,7 +16,7 @@ const FixtureSelector = (
     return(
         <>
             <h2>Fixtures</h2>
-            <ul className="list-group">
+            <ul className="list-group shadow mb-5">
                 {
                     fixtures.map((fixture: any) => {
                         return(

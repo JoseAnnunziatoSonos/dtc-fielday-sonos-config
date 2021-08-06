@@ -16,7 +16,7 @@ const InteractionSelector = (
     return(
         <>
             <h2>Interaction Method</h2>
-            <ul className="list-group">
+            <ul className="list-group shadow mb-5">
                 {
                     interactions.map((interaction: any) => {
                         return(

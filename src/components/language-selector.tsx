@@ -17,7 +17,7 @@ const LanguageSelector = (
     return(
         <>
             <h2>Languages</h2>
-            <ul className="list-group">
+            <ul className="list-group shadow mb-5">
                 {
                     languages.map((language: any) => {
                         return(
@@ -25,10 +25,8 @@ const LanguageSelector = (
                                 onClick={() => selectLanguage(language)}>
                                 {language.label}
                                 {
-                                    language.label === selectedLanguage.label &&
-                                        <>
-                                            <CountrySelector/>
-                                        </>
+                                    language.label === selectedLanguage.label && language.countries.length > 0 &&
+                                    <CountrySelector/>
                                 }
                             </li>
                         )

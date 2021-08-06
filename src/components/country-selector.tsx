@@ -15,7 +15,7 @@ const CountrySelector = (
     }: CountrySelectorProps) => {
     return(
         <>
-            <ul className="list-group">
+            <ul className="list-group shadow mb-5">
                 {
                     countries.map((country: any) => {
                         return(

@@ -16,7 +16,7 @@ const PlayerSelector = (
     return(
         <>
             <h2>Players</h2>
-            <ul className="list-group">
+            <ul className="list-group shadow mb-5">
                 {
                     players.map((player: any) => {
                         return(
