@@ -21,7 +21,8 @@ const LanguageSelector = (
                 {
                     languages.map((language: any) => {
                         return(
-                            <li className={`list-group-item ${language.countries.length === 0 && language.label === selectedLanguage.label ? 'active' : ''}`}
+                            <li key={language.label}
+                                className={`list-group-item ${language.countries.length === 0 && language.label === selectedLanguage.label ? 'active' : ''}`}
                                 onClick={() => selectLanguage(language)}>
                                 {language.label}
                                 {

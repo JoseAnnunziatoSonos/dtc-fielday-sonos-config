@@ -20,7 +20,8 @@ const InteractionSelector = (
                 {
                     interactions.map((interaction: any) => {
                         return(
-                            <li className={`list-group-item ${selectedInteraction && interaction.label === selectedInteraction.label ? 'active' : ''}`}
+                            <li key={interaction.label}
+                                className={`list-group-item ${selectedInteraction && interaction.label === selectedInteraction.label ? 'active' : ''}`}
                                 onClick={() => selectInteraction(interaction)}>
                                 {interaction.label}
                             </li>

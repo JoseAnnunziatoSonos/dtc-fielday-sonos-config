@@ -20,7 +20,8 @@ const PlayerSelector = (
                 {
                     players.map((player: any) => {
                         return(
-                            <li className={`list-group-item ${selectedPlayer && player.label === selectedPlayer.label ? 'active' : ''}`}
+                            <li key={player.label}
+                                className={`list-group-item ${selectedPlayer && player.label === selectedPlayer.label ? 'active' : ''}`}
                                 onClick={() => selectPlayer(player)}>
                                 {player.label}
                             </li>

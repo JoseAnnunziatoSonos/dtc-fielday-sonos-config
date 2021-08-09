@@ -20,7 +20,8 @@ const FixtureSelector = (
                 {
                     fixtures.map((fixture: any) => {
                         return(
-                            <li className={`list-group-item ${fixture.label === selectedFixture.label ? 'active' : ''}`}
+                            <li key={fixture.label}
+                                className={`list-group-item ${fixture.label === selectedFixture.label ? 'active' : ''}`}
                                 onClick={() => selectFixture(fixture)}>
                                 {fixture.label}
                             </li>

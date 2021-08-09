@@ -19,7 +19,8 @@ const CountrySelector = (
                 {
                     countries.map((country: any) => {
                         return(
-                            <li className={`list-group-item ${country.label === selectedCountry.label ? 'active' : ''}`}
+                            <li key={country.label}
+                                className={`list-group-item ${country.label === selectedCountry.label ? 'active' : ''}`}
                                 onClick={() => selectCountry(country)}>
                                 {country.label}
                             </li>
