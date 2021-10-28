@@ -1,0 +1,79 @@
+[
+  {
+    "key": "two",
+    "label": "Two",
+    "pairable": true,
+    "interaction": "HT",
+    "image": "/images/one/one-white.png"
+  },
+  {
+    "key": "one",
+    "label": "One",
+    "pairable": true,
+    "interaction": "AIO",
+    "image": "/images/one/one-white.png"
+  },
+  {
+    "key": "onesl",
+    "label": "OneSL",
+    "pairable": true,
+    "interaction": "AIO",
+    "image": "/images/onesl/onesl-white.png"
+  },
+  {
+    "key": "roam",
+    "label": "Roam",
+    "pairable": true,
+    "interaction": "AIO",
+    "image": "/images/roam/roam-white.png"
+  },
+  {
+    "key": "move",
+    "label": "Move",
+    "pairable": true,
+    "interaction": "AIO",
+    "image": "/images/move/move-white.png"
+  },
+  {
+    "key": "arc",
+    "label": "ARC",
+    "interaction": "HT",
+    "image": "/images/arc/arc-white.png"
+  },
+  {
+    "key": "beam",
+    "label": "Beam",
+    "interaction": "HT",
+    "image": "/images/beam/beam-white.png"
+  },
+  {
+    "key": "ray",
+    "label": "Ray",
+    "interaction": "HT",
+    "image": "/images/ray/ray-white.png"
+  },
+  {
+    "key": "sub",
+    "label": "SUB",
+    "satellite": true,
+    "image": "/images/sub/sub-white.png"
+  },
+  {
+    "key": "gravity",
+    "label": "Gravity",
+    "satellite": true,
+    "image": "/images/gravity/gravity-white.png"
+  },
+  {
+    "key": "rearoc",
+    "label": "Rear OC",
+    "satellite": true,
+    "image": "/images/one/one1white.png"
+  },
+  {
+    "key": "rearcc",
+    "label": "Rear CC",
+    "satellite": true,
+    "image": "/images/one/one1white.png"
+  }
+]
