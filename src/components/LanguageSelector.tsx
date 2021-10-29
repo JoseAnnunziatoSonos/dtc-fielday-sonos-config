@@ -23,13 +23,13 @@ const LanguageSelector = () => {
         setSelectedLanguage(language);
     }
     return(
-        <div className="row">
-            <div className="col-2">
-                <label>
+        <div className="row fs-4">
+            <div className="col-1">
+                <label className="float-end">
                     Language:
                 </label>
             </div>
-            <div className="col">
+            <div className="col-5">
                 <select
                     value={languages.find((language: any) => language.selected) || null}
                     onChange={(event) =>
@@ -38,20 +38,22 @@ const LanguageSelector = () => {
                     className="form-control form-select-lg">
                     <option>Select a language</option>
                     {
-                        languages.map((language: any) => {
+                        languages.map((language: any, idx: number) => {
                             return(
-                                <option selected={language.selected}>{language.label}</option>
+                                <option selected={language.selected} key={idx}>
+                                    {language.label}
+                                </option>
                             )
                         })
                     }
                 </select>
             </div>
-            <div className="col-2">
-                <label>
+            <div className="col-1">
+                <label className="float-end">
                     Country:
                 </label>
             </div>
-            <div className="col">
+            <div className="col-5">
                 <select className="form-control form-select-lg">
                     <option>Select a country</option>
                     {

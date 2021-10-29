@@ -1,0 +1,12 @@
+.sns-player {
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 20px !important;
+  &.sns-selected {
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+  }
+}

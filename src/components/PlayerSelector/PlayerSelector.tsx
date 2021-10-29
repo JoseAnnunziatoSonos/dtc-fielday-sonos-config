@@ -1,7 +1,7 @@
 import React from "react";
-import AIOPlayerSelector from "./AIOPlayerSelector";
-import HTPlayerSelector from "./HTPlayerSelector";
-import SatellitePlayerSelector from "./SatellitePlayerSelector";
+import {useSelector} from "react-redux";
+import {selectAIOPlayers, selectHTPlayers, selectSatellitePlayers} from "../../selectors/playerSelectors"
+import PlayerSelectorList from "./PlayerSelectorList";
 
 /**
  * Component for selecting players.
@@ -10,11 +10,15 @@ import SatellitePlayerSelector from "./SatellitePlayerSelector";
  * @constructor
  */
 const PlayerSelector = () => {
+    const aioPlayers = useSelector(selectAIOPlayers);
+    const htPlayers = useSelector(selectHTPlayers);
+    const satellitePlayers = useSelector(selectSatellitePlayers);
+
     return(
-        <div className="mt-5">
-            <AIOPlayerSelector/>
-            <HTPlayerSelector/>
-            <SatellitePlayerSelector/>
+        <div className="">
+            <PlayerSelectorList players={aioPlayers} title="AIO Players"/>
+            <PlayerSelectorList players={htPlayers} title="HT Players"/>
+            <PlayerSelectorList players={satellitePlayers} title="Satellite Players"/>
         </div>
     );
 };

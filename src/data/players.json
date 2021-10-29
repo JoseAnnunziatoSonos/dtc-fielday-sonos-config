@@ -1,50 +1,50 @@
 [
   {
-    "key": "two",
-    "label": "Two",
-    "pairable": true,
-    "interaction": "HT",
-    "image": "/images/one/one-white.png"
-  },
-  {
     "key": "one",
     "label": "One",
     "pairable": true,
     "interaction": "AIO",
-    "image": "/images/one/one-white.png"
+    "image": "/images/one/one-black.png"
   },
   {
     "key": "onesl",
     "label": "OneSL",
     "pairable": true,
     "interaction": "AIO",
-    "image": "/images/onesl/onesl-white.png"
+    "image": "/images/onesl/onesl-black.png"
   },
   {
     "key": "roam",
     "label": "Roam",
     "pairable": true,
     "interaction": "AIO",
-    "image": "/images/roam/roam-white.png"
+    "image": "/images/roam/roam-black-horizontal.png"
   },
   {
     "key": "move",
     "label": "Move",
     "pairable": true,
     "interaction": "AIO",
-    "image": "/images/move/move-white.png"
+    "image": "/images/move/move-black.png"
+  },
+  {
+    "key": "five",
+    "label": "Five",
+    "pairable": true,
+    "interaction": "AIO",
+    "image": "/images/five/five-black.png"
   },
   {
     "key": "arc",
     "label": "ARC",
     "interaction": "HT",
-    "image": "/images/arc/arc-white.png"
+    "image": "/images/arc/arc-black.png"
   },
   {
     "key": "beam",
     "label": "Beam",
     "interaction": "HT",
-    "image": "/images/beam/beam-white.png"
+    "image": "/images/beam/beam-black.png"
   },
   {
     "key": "ray",
@@ -53,10 +53,16 @@
     "image": "/images/ray/ray-white.png"
   },
   {
+    "key": "fury",
+    "label": "Fury",
+    "interaction": "HT",
+    "image": "/images/fury/fury-white.png"
+  },
+  {
     "key": "sub",
     "label": "SUB",
     "satellite": true,
-    "image": "/images/sub/sub-white.png"
+    "image": "/images/sub/sub-black.png"
   },
   {
     "key": "gravity",
@@ -68,12 +74,12 @@
     "key": "rearoc",
     "label": "Rear OC",
     "satellite": true,
-    "image": "/images/one/one1white.png"
+    "image": "/images/rear/rear-black.png"
   },
   {
     "key": "rearcc",
     "label": "Rear CC",
     "satellite": true,
-    "image": "/images/one/one1white.png"
+    "image": "/images/rear/rear-black.png"
   }
 ]

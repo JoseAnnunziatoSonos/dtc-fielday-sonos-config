@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {useDispatch} from "react-redux";
+import './players.scss';
 
 const Player = (
     {
@@ -20,46 +21,29 @@ const Player = (
     }
     return(
         <div>
-            <div className="card">
-                <div onClick={() => updatePlayer({...player, selected: !player.selected || false})}
-                    className={`card-header ${player.selected ? 'text-white bg-secondary': ''}`}>
-                    <input className="form-check-input me-3"
-                           onChange={(event) =>
-                           {
-                               updatePlayer({...player, selected: event.target.checked})
-                           }}
-                           type="checkbox"
-                           id={`${player.label}-1`}
-                           checked={player.selected}/>
-                    {player.label}
-                    <button className="btn btn-primary">Select</button>
-                </div>
-                <ul className="list-group list-group-flush">
-                    <li onClick={() => updatePlayer({...player, selected: !player.selected || false})}
-                        className="list-group-item"  style={{textAlign: 'center'}}>
-                        <img src={player.image} height={100}/>
-                    </li>
-                    <li onClick={() => updatePlayer({...player, paired: !player.paired || false})}
-                        className="list-group-item">
-                        {
-                            player.pairable &&
-                            <div>
-                                <label className="form-check-label float-start"
-                                       htmlFor={player.label}>Paired</label>
-                                <div className="form-check form-switch">
-                                    <input className="form-check-input float-end"
-                                           onChange={(event) =>
-                                           {
-                                               updatePlayer({...player, paired: event.target.checked})
-                                           }}
-                                           type="checkbox"
-                                           id={player.label}
-                                           checked={player.paired}/>
-                                </div>
-                            </div>
-                        }
-                    </li>
-                </ul>
+            <div onClick={() => updatePlayer({...player, selected: !player.selected || false})}
+                 className={`sns-player shadow p-2 rounded-3 fs-4 ${player.selected ? 'sns-selected':''}`}>
+                {player.label}
+                <br/>
+                <img src={player.image} height={90}/>
+                {
+                    player.pairable &&
+                    <div>
+                        <label className="form-check-label"
+                               htmlFor={player.label}>Paired</label>
+                        <div className="form-check form-switch d-inline-block">
+                            <input className="form-check-input position-relative"
+                                   style={{top: '5px', left: '5px'}}
+                                   onChange={(event) =>
+                                   {
+                                       updatePlayer({...player, paired: event.target.checked})
+                                   }}
+                                   type="checkbox"
+                                   id={player.label}
+                                   checked={player.paired}/>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     );
